@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02_JSX基本语法</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+      let n = 0;
+      const colors = [
+        "#FF0000",
+        "#FF7F00",
+        "#FFFF00",
+        "#00FF00",
+        "#0000FF",
+        "#4B0082",
+        "#8F00FF",
+      ];
+
+      const btnClick = () => {
+        n++;
+        rootRender();
+      };
+
+      const getCurrentColor = () => {
+        return colors[n % colors.length];
+      };
+
+      const rootRender = () => {
+        root.render(
+          <div>
+            <h2 style={{ color: getCurrentColor() }}>您已经点击了{n}次</h2>
+            <button onClick={btnClick}>点我变彩虹色🌈</button>
+            {n > 9 && <p>你已触发成就：彩虹大师！</p>}
+          </div>
+        );
+      };
+
+      rootRender();
+    </script>
+  </body>
+</html>
