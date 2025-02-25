@@ -1,0 +1,60 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.book-input input {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.book-input button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.book-list {
+  margin-top: 20px;
+}
+
+.book-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.book-item img {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.book-item button {
+  margin-left: 5px;
+}
+
+.book-detail {
+  margin-top: 20px;
+}
+
+.book-detail h2 {
+  color: #2682bc;
+}
+
+.book-detail img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.book-detail p {
+  font-size: 16px;
+  color: #555;
+}
