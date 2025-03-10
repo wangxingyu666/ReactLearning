@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+/* 默认的链接样式 */
+.link {
+  text-decoration: none;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  margin: 5px 20px;
+  background-color: #ecebf1;
+}
+
+/* 被点击后激活的链接样式 */
+.active-link {
+  color: black;
+  background-color: #189adc;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px 20px;
+  border-radius: 10px;
+}
+
+.profile-container {
+  padding: 20px;
+}
+
+.menu-and-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column; /* 将菜单项竖着排列 */
+  margin-right: 20px; /* 给菜单和内容之间留点空间 */
+}
+
+.menu .link {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu .active-link {
+  font-weight: bold;
+  color: blue;
+}
+
+.content {
+  flex: 1;
+}
