@@ -1,0 +1,25 @@
+.login {
+  min-height: 100vh; /* 使登录页面的最小高度为视口高度，确保页面填满整个屏幕 */
+  background-color: #f5f5f5; /* 设置页面背景颜色为浅灰色 */
+  display: flex;
+  align-items: center; /* 在垂直方向上居中子元素 */
+  justify-content: center; /* 在水平方向上居中子元素 */
+
+  .login-form {
+    width: 90%;
+    max-width: 600px; /* 限制表单最大宽度为600px，适应不同屏幕尺寸 */
+    background-color: #fff; /* 表单背景设为白色 */
+    padding: 30px 20px; /* 设置表单内边距 */
+    border-radius: 8px; /* 表单边框圆角 */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); /* 表单阴影效果，增加层次感 */
+
+    .at-input {
+      margin-bottom: 20px; /* 输入框底部间距 */
+    }
+
+    .login-btn {
+      margin-top: 30px;
+      width: 100%; /* 登录按钮宽度占满表单 */
+    }
+  }
+}
