@@ -1,0 +1,30 @@
+.wifi-page {
+  padding: 20px;
+
+  .status-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .connected-info {
+      margin-top: 10px;
+      color: #666;
+      font-size: 14px;
+    }
+  }
+
+  .action-buttons {
+    margin: 15px 0;
+    button {
+      margin-bottom: 10px;
+    }
+  }
+
+  .at-list {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}

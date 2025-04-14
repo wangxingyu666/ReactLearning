@@ -25,6 +25,22 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    // 加载更多指示器样式
+    .loading-indicator {
+      text-align: center;
+      padding: 15px;
+      color: #666;
+      font-size: 24px;
+    }
+  }
+
+  // 下拉刷新相关样式
+  .refresher-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
   }
 
   // Swiper样式
@@ -70,6 +86,33 @@
       .cover-description {
         color: #fff;
         font-size: 24px;
+      }
+    }
+  }
+
+  // MovableArea和MovableView样式
+  .movable-area {
+    width: 100%;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    position: relative;
+
+    .movable-view {
+      width: 120px;
+      height: 120px;
+
+      .movable-content {
+        width: 100%;
+        height: 100%;
+        background-color: #6190e8;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 28px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       }
     }
   }

@@ -24,6 +24,13 @@ export default defineAppConfig({
     "pages/skyline/index",
     "pages/components/index",
     "pages/api/index",
+    "pages/openAbility/index",
+    "pages/blueTooth/index",
+    "pages/clipBoard/index",
+    "pages/scan/index",
+    "pages/screen/index",
+    "pages/netWork/index",
+    "pages/wifi/index",
   ],
   window: {
     backgroundTextStyle: "light",

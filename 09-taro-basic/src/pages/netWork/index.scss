@@ -1,0 +1,57 @@
+.network-container {
+  padding: 20px;
+
+  .network-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .info-item {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+
+      .label {
+        color: #666;
+        font-size: 14px;
+        width: 80px;
+      }
+
+      .value {
+        color: #333;
+        font-size: 14px;
+        flex: 1;
+      }
+    }
+  }
+
+  .control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .monitor-btn {
+      background-color: #4594d5;
+      color: #fff;
+
+      &.active {
+        background-color: #ff4d4f;
+      }
+    }
+
+    .refresh-btn {
+      background-color: #52c41a;
+      color: #fff;
+    }
+  }
+}

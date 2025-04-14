@@ -1,0 +1,30 @@
+.webview-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .taro-web-view {
+    flex: 1;
+    width: 100%;
+  }
+
+  .navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+
+    .nav-btn {
+      min-width: 160px;
+      margin: 0 10px;
+      background-color: #07c160;
+      color: #fff;
+
+      &[disabled] {
+        background-color: #ccc;
+        color: #999;
+      }
+    }
+  }
+}

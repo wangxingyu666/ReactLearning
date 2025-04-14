@@ -45,6 +45,11 @@ export default function Discover() {
           arrow="right"
           onClick={() => handleNavigate("/pages/location/index")}
         />
+        <AtListItem
+          title="开放能力"
+          arrow="right"
+          onClick={() => handleNavigate("/pages/openAbility/index")}
+        />
       </AtList>
     </View>
   );
