@@ -1,4 +1,9 @@
 export default defineAppConfig({
+  permission: {
+    "scope.userLocation": {
+      desc: "你的位置信息将用于小程序位置接口的效果展示",
+    },
+  },
   pages: [
     "pages/index/index",
     "pages/discover/index",
@@ -8,6 +13,17 @@ export default defineAppConfig({
     "pages/countBook/index",
     "pages/nameCard/index",
     "pages/musicBox/index",
+    "pages/basic/index",
+    "pages/contact/index",
+    "pages/container/index",
+    "pages/device/index",
+    "pages/form/index",
+    "pages/location/index",
+    "pages/map/index",
+    "pages/media/index",
+    "pages/skyline/index",
+    "pages/components/index",
+    "pages/api/index",
   ],
   window: {
     backgroundTextStyle: "light",
@@ -38,6 +54,18 @@ export default defineAppConfig({
         text: "我的",
         iconPath: "./assets/tabs/profile.png",
         selectedIconPath: "./assets/tabs/profile-active.png",
+      },
+      {
+        pagePath: "pages/components/index",
+        text: "组件",
+        iconPath: "./assets/tabs/zujian.png",
+        selectedIconPath: "./assets/tabs/zujian-active.png",
+      },
+      {
+        pagePath: "pages/api/index",
+        text: "api",
+        iconPath: "./assets/tabs/api.png",
+        selectedIconPath: "./assets/tabs/api.png",
       },
     ],
   },
